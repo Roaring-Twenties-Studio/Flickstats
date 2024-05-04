@@ -1,0 +1,38 @@
+.root {
+  height: 200px;
+  width: 100%;
+  display: flex;
+}
+
+.actWrapper {
+  position: relative;
+  text-decoration: none;
+}
+
+.tooltip {
+  visibility: hidden;
+  font-family: system-ui, sans-serif;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 12px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  top: -50px;
+  font-size: 12px;
+}
+
+.tooltip > div {
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.actWrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

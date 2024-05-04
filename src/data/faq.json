@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "title": "How do I import my script into FlickStats?",
+    "text": "On the Dashboard page, click on the large square with a PDF logo in the center. A window will open. Select your file and FlickStats will do the rest. Alternatively, you can drag and drop your script directly into the input field."
+  },
+  { 
+    "id": 1,
+    "title": "Which script formatting do you recommend?",
+    "text": "Document margins: \n- Left: 1.25'' (3.175cm)\n- Top: 1.05'' (2.667cm)\n- Right: 1.25'' (3.175cm)\n- Bottom: 0.90'' (2.286cm)\n\nPage size\n- Page width: 8.50’’ (21.59cm)\n- Page height: 11.00'' (27.94cm)\n\nScene heading\n- Font: Courier New 12pt, all caps.\n- Left margin: 1.25'' (3.175cm)\n- Example: INT. ROY'S CAR - NIGHT\n\nAction (normal text)\n- Font: Courier New 12 pt, regular style.\n- Left margin: 1.25'' (3.175cm)\n- Example: Franck is driving Roy's car on a country road.\n\nCharacter\n- Font: Courier New 12 pt, all caps.\n- Left margin: 3.75'' (9.525cm).\n- Example: FRANK\n\nDialogue\n- Font: Courier New 12 pt, regular size.\n- Left margin: 2.55'' (6.477cm).\n- Right margin: 2.25'' (6.477cm) - a dialogue line should not extend more than 6.25''(15.875cm) from the left -.\n- Example: Howdy partners, the sun is up.\n\nAct\n- Font: Courier New 12pt, all caps.\n- At the top of the page, centred.\n- Recognised acts: ACT X (replace X with ONE, TWO, etc.), SCENE X, COLD X, INTRO, TAG, OUTRO.\n\n It is also a good idea to avoid font effects in order to reduce the possibility of parsing errors."
+  },
+  {
+    "id": 2,
+    "title": "My script is not parsed correctly",
+    "text": "FlickStats expects your script to be formatted with industry standard spacing and margins in order to properly detect dialogs, scene slugs, and other important elements.\n\n If your margins are different, you can click on the second button from the right at the top of your script report (near the 'trash' button). This will open a 'Settings' window that will allow you to adjust the detection threshold of your dialogs and script title. \n\n If your script is still being parsed incorrectly, select the Force Line Break option at the bottom of the Settings window. Sometimes PDF parsing can merge each page of text into a single line, making it difficult to parse. Enabling this option will ensure that the line breaks between each line are respected. Enable this option if your script analysis looks strange or incorrect. \n\n Last but not least, avoid font effects such as bold, as they can confuse the parsing. Click 'Apply' to confirm your new settings. Note that (cont'd) are not considered to be new dialogs."
+  },
+  {
+    "id": 3,
+    "title": "How do I focus the analysis on one character?",
+    "text": "You can click on the third button from the right at the top right of your report (near the Settings and Trash buttons). This will open a 'Users' window that lists all the characters detected in your script.\n\n Select the character you want to focus on and click 'Apply' to confirm. A new page dedicated to your character will open. You can return to the main report at any time by clicking the 'Back' button at the top left of the page."
+  },
+  {
+    "id": 4,
+    "title": "The story acts are not recognized",
+    "text": "FlickStats recognizes acts if they are explicitly written in your script. A valid act line must start with 'ACT ', 'SCENE ', 'COLD', 'INTRO', 'TAG' or 'OUTRO' (examples: 'ACT ONE', 'SCENE FIVE', 'COLD OPEN', etc.)."
+  },
+  {
+    "id": 5,
+    "title": "Is my script safe from prying eyes?",
+    "text": "Yes, your script will never leave your computer. We don't - and never will - collect any information about you or your scripts."
+  },
+  {
+    "id": 6,
+    "title": "What kind of data is analyzed?",
+    "text": "FlickStats gives you the following insights about your scripts: \n\n • Metadata (author, title, number of pages, contact info) if a title page is provided \n • Evolution over time of dialog and action \n • Number and evolution over time of indoor and outdoor scenes \n • Number and listing of scene periods (NIGHT, DAY, DAWN, MORNING, DUSK, AFTERNOON, TWILIGHT) \n • Count, list and evolution over time of scenes \n • 50 most used words in dialogues \n • Count, list and evolution over time of character actions, dialogues and presence \n • Main character detection (based on global presence in the script) \n • Dialogue snippets (the characters are quoted) \n • Acts separation (if the acts are clearly mentioned in the script)"
+  },
+  {
+    "id": 7,
+    "title": "How to replace the analyzed screenplay with a new one?",
+    "text": "You can click on the 'Trash' button at the top right of your report. This will delete the current report and redirect you to a blank dashboard page. You can then import a new script."
+  },
+  {
+    "id": 8,
+    "title": "Does FlickStats analyze the quality of my story?",
+    "text": "No. FlickStats does not give an opinion about your story. The goal of this software is to give you insightful data about the structure of your script, not to give you a subjective opinion about your work. Does character A have enough presence in the second act? Should you really shoot so many scenes in location X? Is there a good balance between action and dialogue? Thanks to the wealth of factual information in your FlickStats report, you can take your script to the next level and send it to your readers with confidence."
+  },
+  {
+    "id": 9,
+    "title": "What file formats are supported?",
+    "text": "Your script must be in PDF format, properly formatted according to industry standards, and no larger than 4 megabytes. Other formats will not be accepted."
+  },
+  {
+    "id": 10,
+    "title": "What screenwriting software do you recommend for PDF export?",
+    "text": "Any screenwriting software should be able to export a properly formatted version of your script as a PDF. However, Flickstats recommends Final Draft 12 or FadeIn Pro 4."
+  },
+  {
+    "id": 11,
+    "title": "Legal notice",
+    "text": "FlickStats is intended to provide insights and analysis of screenplays contained within PDF files. While we strive to provide accurate and helpful analysis, the complex nature of PDF content may result in limitations and occasional inaccuracies.\n\n The analysis provided by FlickStats should not be considered as professional advice or an absolute reflection of the content's attributes. Users are encouraged to exercise their judgment and verify information independently. By using FlickStats, users acknowledge and agree that FlickStats shall not be held liable for any errors, omissions, or outcomes arising from the use of the software's analysis.\n\nFlickStats does not guarantee the completeness, accuracy, or reliability of the analysis results, and users assume full responsibility for their interpretations and actions based on those results."
+  }
+]

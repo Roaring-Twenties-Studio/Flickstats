@@ -1,0 +1,12 @@
+.container {
+  color: #fff;
+  width: 100%;
+  padding-left: 174px;
+  background-color: #202124;
+}
+
+@media (max-width: 750px) {
+  .container {
+    padding-left: 0px;
+  }
+}

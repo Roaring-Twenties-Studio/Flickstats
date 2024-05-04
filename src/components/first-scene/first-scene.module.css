@@ -1,0 +1,11 @@
+.root {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 12px;
+}

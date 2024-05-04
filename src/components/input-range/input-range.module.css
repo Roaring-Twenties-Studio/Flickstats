@@ -1,0 +1,44 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.root > label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  width: 240px;
+  text-align: left;
+  color: #000;
+}
+
+.blue {
+  accent-color: #7794b9;
+  cursor: pointer;
+  width: 100%;
+}
+
+.blue:hover {
+  accent-color: #8ea1b9;
+}
+
+.red {
+  accent-color: #d92534;
+  cursor: pointer;
+  width: 100%;
+}
+
+.red:hover {
+  accent-color: #d64753;
+}
+
+.orange {
+  accent-color: #ff9800;
+  cursor: pointer;
+  width: 100%;
+}
+
+.orange:hover {
+  accent-color: #f9ab37;
+}

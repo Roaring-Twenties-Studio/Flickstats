@@ -1,0 +1,21 @@
+.root {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  margin: 48px 0;
+}
+
+.root > p {
+  margin-top: 6px;
+}
+
+.titleBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: bold;
+  margin-left: 18px;
+}

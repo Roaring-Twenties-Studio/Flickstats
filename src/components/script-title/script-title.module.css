@@ -1,0 +1,93 @@
+.pageTitle {
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(32, 33, 36, 1) 82%,
+    rgba(32, 33, 36, 0) 100%
+  );
+  color: #fff;
+  padding: 48px 24px;
+  transition: 0.2s ease;
+  will-change: padding;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  font-size: 38px;
+  left: 150px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.scriptTitle {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 550px;
+}
+
+.schrink {
+  padding: 24px;
+  font-size: 18px;
+}
+
+.actionButtons {
+  margin-right: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.characterButton {
+  position: relative;
+}
+
+.characterButton:hover > .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: center;
+  transition: opacity 0.6s ease;
+  border-radius: 6px;
+  left: -254px;
+  bottom: 0;
+  top: 0;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  z-index: 100;
+  font-size: 12px;
+  font-family: system-ui, sans-serif;
+}
+
+.tooltipBack {
+  left: 40px;
+}
+
+@media (max-width: 751px) {
+  .pageTitle {
+    top: 60px;
+    left: 0;
+    padding: 24px;
+    font-size: 24px;
+  }
+  .actionButtons {
+    margin-right: 0;
+  }
+}

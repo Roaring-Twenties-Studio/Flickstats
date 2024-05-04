@@ -1,0 +1,63 @@
+.root {
+  display: flex;
+  overflow-y: hidden;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 24px;
+  gap: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  cursor: default;
+  font-family: interRegular;
+}
+
+.label {
+  color: #ddd;
+  font-size: 12px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+.legendLabel {
+  width: max-content;
+}
+
+.badge {
+  border-radius: 50%;
+  border: 0;
+  height: 8px;
+  width: 8px;
+  margin-right: 4px;
+  transition: 0.3s background-color ease;
+}
+
+.fadedBadge {
+  background-color: #666;
+}
+
+.button {
+  border: 0;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #000;
+}
+
+.popover {
+  background: #000;
+  padding: 12px;
+  color: #fff;
+  border-radius: 4px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.popover > span {
+  padding: 6px 0;
+}

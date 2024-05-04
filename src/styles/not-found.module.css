@@ -1,0 +1,32 @@
+.container {
+  margin-left: 150px;
+  height: 100vh;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  font-family: interRegular;
+}
+
+.title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.text {
+  margin-bottom: 36px;
+  color: #5e5f61;
+}
+
+@media (max-width: 750px) {
+  .container {
+    margin-left: 0px;
+  }
+  .text {
+    font-size: 14px;
+  }
+}

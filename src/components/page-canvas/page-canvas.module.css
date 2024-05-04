@@ -1,0 +1,63 @@
+.root {
+  text-align: center;
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.error {
+  color: #d92534;
+}
+
+.canvasSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvasWrapper {
+  border: 1px solid black;
+  position: relative;
+  width: 152px;
+  height: 202px;
+}
+
+.canvasLines {
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.canvasPage {
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.reset {
+  border: 0;
+  padding: 4px;
+  gap: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.reset:hover {
+  opacity: 0.8;
+}

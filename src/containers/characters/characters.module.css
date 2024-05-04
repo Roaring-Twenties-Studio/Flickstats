@@ -1,0 +1,27 @@
+.root {
+  margin-bottom: 48px;
+}
+
+.push {
+  height: 6px;
+}
+
+.bigPush {
+  padding-top: 24px;
+}
+
+.row {
+  padding: 0 24px;
+}
+
+.counterCasting {
+  padding: 30px 24px 0 24px;
+}
+
+.page {
+  padding: 24px;
+}
+
+.empty {
+  margin: 48px 0;
+}

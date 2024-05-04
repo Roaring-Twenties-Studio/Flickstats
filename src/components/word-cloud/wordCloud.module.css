@@ -1,0 +1,143 @@
+.cloud {
+  font-family: courier;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.75rem;
+  gap: 6px;
+}
+
+.wordWrapper {
+  position: relative;
+  text-decoration: none;
+}
+
+.dialog,
+.action {
+  --size: 4;
+  --color: #f0f078;
+  color: var(--color);
+  font-size: calc(var(--size) * 0.25rem + 0.5rem);
+  display: block;
+  padding: 0.4rem 0.25rem;
+  position: relative;
+  cursor: default;
+}
+
+/* DIALOG */
+
+.dialog[data-weight="1"] {
+  --size: 1;
+  color: rgba(237, 237, 140, 0.6);
+}
+.dialog[data-weight="2"] {
+  --size: 3;
+  color: rgba(237, 237, 140, 0.7);
+}
+.dialog[data-weight="3"] {
+  --size: 5;
+  color: rgba(237, 237, 140, 0.8);
+}
+.dialog[data-weight="4"] {
+  --size: 7;
+  color: rgba(237, 237, 140, 0.9);
+}
+.dialog[data-weight="5"] {
+  --size: 9;
+  color: rgba(237, 237, 140, 1);
+}
+.dialog[data-weight="6"] {
+  --size: 11;
+  color: rgba(240, 240, 120, 0.6);
+}
+.dialog[data-weight="7"] {
+  --size: 12;
+  color: rgba(240, 240, 120, 0.7);
+}
+.dialog[data-weight="8"] {
+  --size: 14;
+  color: rgba(240, 240, 120, 0.8);
+}
+.dialog[data-weight="9"] {
+  --size: 16;
+  color: rgba(240, 240, 120, 0.9);
+}
+.dialog[data-weight="10"] {
+  --size: 18;
+  color: rgba(240, 240, 120, 1);
+}
+
+/* ACTION */
+
+.action[data-weight="1"] {
+  --size: 1;
+  color: rgba(102, 170, 237, 0.6);
+}
+.action[data-weight="2"] {
+  --size: 3;
+  color: rgba(102, 170, 237, 0.7);
+}
+.action[data-weight="3"] {
+  --size: 5;
+  color: rgba(102, 170, 237, 0.8);
+}
+.action[data-weight="4"] {
+  --size: 7;
+  color: rgba(102, 170, 237, 0.9);
+}
+.action[data-weight="5"] {
+  --size: 9;
+  color: rgba(102, 170, 237, 1);
+}
+.action[data-weight="6"] {
+  --size: 11;
+  color: rgba(120, 180, 240, 0.6);
+}
+.action[data-weight="7"] {
+  --size: 12;
+  color: rgba(120, 180, 240, 0.7);
+}
+.action[data-weight="8"] {
+  --size: 14;
+  color: rgba(120, 180, 240, 0.8);
+}
+.action[data-weight="9"] {
+  --size: 16;
+  color: rgba(120, 180, 240, 0.9);
+}
+.action[data-weight="10"] {
+  --size: 18;
+  color: rgba(120, 180, 240, 1);
+}
+
+.tooltip {
+  visibility: hidden;
+  font-family: interRegular;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 12px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  top: -50px;
+  font-size: 12px;
+}
+
+.wordWrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.noData {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  font-family: "interRegular";
+}

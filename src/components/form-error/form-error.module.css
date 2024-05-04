@@ -1,0 +1,8 @@
+.root {
+  text-align: center;
+}
+
+.root > p {
+  color: #d92534;
+  margin-bottom: 24px;
+}

@@ -1,0 +1,75 @@
+.root {
+  margin-top: 16px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.optionLabel {
+  color: #303642;
+  display: flex;
+  align-items: center;
+  transition: ease 0.4s;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.optionLabel::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #eee;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 8px;
+  box-sizing: border-box;
+  transition: ease 0.4s;
+  border: 2px solid #eee;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .optionLabel::before {
+  background-color: #f0f078;
+  border: 2px solid black;
+}
+
+input[type="checkbox"]:checked + .optionLabel {
+  font-weight: bold;
+  color: black;
+}
+
+.infoCircle {
+  margin-left: 4px;
+  margin-top: 2px;
+}
+
+.infoCircle:hover > .tooltipLinebreak {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltipLinebreak {
+  visibility: hidden;
+  position: absolute;
+  width: max-content;
+  width: 294px;
+  height: 160px;
+  line-height: 18px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: center;
+  transition: opacity 0.6s ease;
+  border-radius: 6px;
+  left: 82px;
+  top: 352px;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  z-index: 100;
+  font-size: 12px;
+  font-family: 'interRegular';
+}
