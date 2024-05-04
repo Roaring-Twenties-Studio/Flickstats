@@ -1,0 +1,54 @@
+.chevron {
+  border-style: solid;
+  border-width: 0.125rem 0.125rem 0 0;
+  height: 0.25rem;
+  width: 0.25rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.chevronTop {
+  transform: rotate(-45deg);
+}
+
+.chevronBottom {
+  transform: rotate(130deg);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.25s ease;
+  font-family: interBold;
+}
+
+.titleOpen {
+  color: #f0f078;
+}
+
+.contentWrapper {
+  transition: max-height 0.25s ease-in-out;
+  overflow: hidden;
+}
+
+.container {
+  border: 0.125rem solid #3f3f3f;
+  padding: 0 1.25rem;
+  background: #262728;
+}
+
+.container + .container {
+  margin-top: -0.125rem;
+}
+
+.content {
+  padding: 0 0 1rem;
+  color: #a9a9a9;
+  line-height: 1.5;
+  white-space: pre-line;
+  font-family: interRegular;
+}

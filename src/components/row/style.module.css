@@ -1,0 +1,28 @@
+.auto {
+  display: grid;
+  grid-gap: 48px;
+  padding: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.main-right {
+  display: grid;
+  grid-gap: 48px;
+  padding: 24px;
+  grid-template-columns: 1fr 2fr;
+}
+
+.main-left {
+  display: grid;
+  grid-gap: 48px;
+  padding: 24px;
+  grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 1000px) {
+  .auto,
+  .main-left,
+  .main-right {
+    grid-template-columns: 1fr;
+  }
+}

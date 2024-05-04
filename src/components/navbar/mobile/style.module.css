@@ -1,0 +1,170 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  font-family: interRegular;
+}
+
+.navContainer {
+  display: block;
+  position: relative;
+  height: 60px;
+  background: #000;
+  z-index: 10;
+}
+
+.menuLinks {
+  padding: 0;
+}
+
+.menuLinks > li {
+  list-style: none;
+}
+
+.menuLinks > a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.menuLinks > a:hover {
+  font-weight: bolder;
+}
+
+.navlinks {
+  color: #5e5f61;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 12px 0px;
+  text-align: center;
+}
+
+.navlinks:hover {
+  color: #f0f078;
+}
+
+.activeLink {
+  color: #fff;
+}
+
+.navButton {
+  color: #5e5f61;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 12px 0px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navButton:hover {
+  color: #f0f078;
+}
+
+.input {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 14px;
+  right: 24px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.input[type="checkbox"] {
+  display: block;
+}
+
+.hamburgerLines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  right: 24px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburgerLines > span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.lineOne {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.lineTwo {
+  transition: transform 0.2s ease-in-out;
+}
+
+.lineThree {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.menuLinks {
+  height: 100vh;
+  background: #000;
+  transform: translateX(-150%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+  margin: 0;
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 24px;
+  font-family: interBold;
+}
+
+.logo > h2 {
+  margin-left: 6px;
+  font-size: 12px;
+  border-left: 1px solid #fff;
+  padding-left: 6px;
+}
+
+.input[type="checkbox"]:checked ~ .menuLinks {
+  transform: translateX(0);
+}
+
+.input[type="checkbox"]:checked ~ .hamburgerLines .lineOne {
+  transform: rotate(45deg);
+}
+
+.input[type="checkbox"]:checked ~ .hamburgerLines .lineTwo {
+  transform: scaleY(0);
+}
+
+.input[type="checkbox"]:checked ~ .hamburgerLines .lineThree {
+  transform: rotate(-45deg);
+}
+
+@media (min-width: 751px) {
+  .navbar {
+    display: none;
+  }
+}

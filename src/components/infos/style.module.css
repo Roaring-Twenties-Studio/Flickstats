@@ -1,0 +1,48 @@
+.root {
+  margin-top: 164px;
+  margin-bottom: 72px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.line {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.badge {
+  height: 54px;
+  width: 54px;
+  background-color: #3a3a3a;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block {
+  border-left: 1px solid white;
+  padding-left: 12px;
+  font-family: interRegular;
+}
+
+.quoteWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .root {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+  }
+  .infosRoot {
+    margin-bottom: 48px;
+  }
+  .block {
+    margin-bottom: 48px;
+  }
+}

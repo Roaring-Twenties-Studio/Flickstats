@@ -1,0 +1,85 @@
+.navbar {
+  background: #000;
+  top: 0;
+  width: 150px;
+  position: fixed;
+  height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-family: interRegular;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo > span {
+  font-size: 8px;
+}
+
+.logo > h1 {
+  margin: 0 0 4px 0;
+  font-family: interBold;
+}
+
+.logo > h2 {
+  margin: 0;
+  font-family: interBold;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  transition: 0.3s ease;
+  border: 1px solid #fff;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+.logo:hover h1 {
+  color: #f0f078;
+}
+
+.logo:hover h2 {
+  background-color: #000;
+  color: #fff;
+}
+
+.navlinks {
+  color: #5e5f61;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 6px 0px;
+}
+
+.navlinks:hover {
+  color: #f0f078;
+}
+
+.activeLink {
+  color: #fff;
+}
+
+.navButton {
+  color: #5e5f61;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 6px 0px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navButton:hover {
+  color: #f0f078;
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    display: none;
+  }
+}

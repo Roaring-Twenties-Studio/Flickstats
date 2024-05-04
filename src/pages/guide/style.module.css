@@ -1,0 +1,34 @@
+.container {
+  margin-left: 150px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  flex-direction: column;
+  padding: 48px 24px;
+}
+
+.title {
+  color: #f0f078;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 0;
+  font-family: 'interBold';
+}
+
+.text {
+  margin-bottom: 36px;
+  color: #5e5f61;
+}
+
+.blocks {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 750px) {
+  .container {
+    margin: 48px 0;
+  }
+  .text {
+    font-size: 14px;
+  }
+}

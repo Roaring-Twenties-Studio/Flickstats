@@ -1,0 +1,55 @@
+.characterRoot {
+  margin-top: 164px;
+}
+
+.push {
+  margin-top: 24px;
+}
+
+.bigPush {
+  margin-top: 72px;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  color: #666;
+  font-family: interRegular;
+}
+
+.actsTitle {
+  margin-top: 6px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actsCounter {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 92px;
+  font-weight: bold;
+  margin: 0 12px;
+}
+
+.counterLocation {
+  padding: 72px 24px 0 24px;
+}
+
+.error {
+  color: #d92534;
+}
+
+@media (max-width: 750px) {
+  .actsTitle {
+    font-size: 14px;
+  }
+  .actsCounter {
+    font-size: 44px;
+  }
+  .copyright {
+    margin-bottom: 48px;
+  }
+}

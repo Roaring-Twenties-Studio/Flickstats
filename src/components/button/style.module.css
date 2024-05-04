@@ -1,0 +1,70 @@
+.root {
+  background-color: #5e5f61;
+  color: #fff;
+  padding: 12px;
+  font-size: 14px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-family: 'interRegular';
+}
+.root > svg {
+  cursor: pointer;
+}
+
+.root:disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.primary:hover {
+  background-color: #f0f078;
+  color: #000;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 1px solid #f0f078;
+  color: #f0f078;
+  transition: 0.3s ease;
+}
+
+.secondary:hover {
+  background-color: #f0f078;
+  color: #000;
+}
+
+.tertiary {
+  background-color: transparent;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.tertiary:hover {
+  background-color: #5e5f61;
+}
+
+.quaternary {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.quaternary:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.danger {
+  background-color: transparent;
+  border: 1px solid #d92534;
+  color: #d92534;
+  transition: 0.3s ease;
+}
+
+.danger:hover {
+  background-color: #d92534;
+  color: #fff;
+}

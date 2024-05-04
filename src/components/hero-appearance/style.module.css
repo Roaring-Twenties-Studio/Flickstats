@@ -1,0 +1,28 @@
+.root {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-bottom: 48px;
+  margin-top: 12px;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: bold;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.hero {
+  border-bottom: 1px solid #f0f078;
+}
+
+.quotePush {
+  margin-bottom: 12px;
+}
+
+.noQuote {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  font-family: "interRegular";
+}
