@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./row-title.module.css";
+import styles from "./style.module.css";
 
 interface IProps {
   title: string;

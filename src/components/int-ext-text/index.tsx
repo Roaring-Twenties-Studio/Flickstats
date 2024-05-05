@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
-import { ParsedScreenplay } from "models/screenplay";
-import styles from "./int-ext-text.module.css";
+import type { ParsedScreenplay } from "models/screenplay";
+import styles from "./style.module.css";
 
 interface IProps {
   pages: ParsedScreenplay["pages"];

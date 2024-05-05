@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
+import Button from "components/button";
 import useBlockScroll from "./useBlockScroll";
 import useClickOutside from "./useClickOutside";
-import styles from "./modal.module.css";
-import Button from "components/button";
+import styles from "./style.module.css";
 
 interface ModaleProps {
   open: boolean;

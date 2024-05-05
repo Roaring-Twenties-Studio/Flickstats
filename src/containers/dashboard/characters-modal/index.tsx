@@ -1,11 +1,11 @@
-import Modal from "components/modal";
 import React, { useMemo, useRef, useState } from "react";
+import Modal from "components/modal";
 import UserGear from "components/icons/user-gear.svg";
-import styles from "./characters-modal.module.css";
-import { Settings } from "models/screenplay";
-import Tabs from "./tabs";
-import Focus from "./focus";
+import type { Settings } from "models/screenplay";
 import Exclude from "./exclude";
+import Focus from "./focus";
+import styles from "./style.module.css";
+import Tabs from "./tabs";
 
 interface IProps {
   onClose: () => void;

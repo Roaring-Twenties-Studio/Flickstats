@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
-import { ParsedCharacter } from "models/screenplay";
-import styles from "./int-ext-text.module.css";
+import type { ParsedCharacter } from "models/screenplay";
+import styles from "./style.module.css";
 
 interface IProps {
   name: string;

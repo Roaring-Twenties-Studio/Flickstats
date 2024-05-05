@@ -1,8 +1,8 @@
 import React from "react";
 import Quote from "components/quote";
-import { ParsedScreenplay } from "models/screenplay";
-import styles from "./infos.module.css";
+import type { ParsedScreenplay } from "models/screenplay";
 import Line from "./line";
+import styles from "./style.module.css";
 
 interface IProps {
   metadata: ParsedScreenplay["metadata"];

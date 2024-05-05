@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import styles from "./characters-modal.module.css";
 import Ban from "components/icons/ban.svg";
 import Checkmark from "components/icons/checkmark.svg";
+import styles from "./style.module.css";
 
 interface IProps {
   onChangeExclusionList: (characters: string[]) => void;

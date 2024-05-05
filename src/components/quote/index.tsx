@@ -1,7 +1,7 @@
 import React from "react";
 import QuoteLeft from "components/icons/quote-left.svg";
 import QuoteRight from "components/icons/quote-right.svg";
-import styles from "./quote.module.css";
+import styles from "./style.module.css";
 
 interface IProps {
   quote: string;

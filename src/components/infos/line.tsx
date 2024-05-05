@@ -3,8 +3,8 @@ import Email from "components/icons/envelope.svg";
 import Page from "components/icons/page.svg";
 import Pen from "components/icons/pen.svg";
 import Phone from "components/icons/phone.svg";
+import styles from "./style.module.css";
 
-import styles from "./infos.module.css";
 interface IProps {
   text: string;
   icon: "email" | "phone" | "author" | "page";

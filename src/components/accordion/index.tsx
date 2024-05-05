@@ -1,5 +1,5 @@
 import React, { useRef, ReactNode } from "react";
-import styles from "./accordion.module.css";
+import styles from "./style.module.css";
 
 interface IProps {
   title: string;

@@ -1,7 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import styles from "./line-break-option.module.css";
 import CircleInfo from "components/icons/circle-info.svg";
+import styles from "./style.module.css";
 
 interface IProps {
   forceLineBreak: boolean;

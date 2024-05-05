@@ -1,8 +1,8 @@
-import { Component } from "react";
+import { Component, ReactNode } from "react";
 
 interface Props {
-  fallback: React.ReactNode;
-  children?: React.ReactNode;
+  fallback: ReactNode;
+  children?: ReactNode;
 }
 
 export class ErrorBoundary extends Component<Props> {

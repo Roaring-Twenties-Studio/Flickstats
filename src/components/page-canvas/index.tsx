@@ -1,8 +1,8 @@
-import InputRange from "components/input-range";
-import { Settings } from "models/screenplay";
 import React, { forwardRef, useCallback, useEffect, useRef } from "react";
-import styles from "./page-canvas.module.css";
 import Reset from "components/icons/reset.svg";
+import InputRange from "components/input-range";
+import type { Settings } from "models/screenplay";
+import styles from "./style.module.css";
 
 interface IProps {
   onChangeLine: (line: keyof Settings, value: number) => void;

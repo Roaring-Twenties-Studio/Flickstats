@@ -1,7 +1,7 @@
 import React from "react";
 import Camera from "components/icons/camera.svg";
 import Clapperboard from "components/icons/clapperboard.svg";
-import styles from "./counter.module.css";
+import styles from "./style.module.css";
 
 interface IProps {
   count: number | string;

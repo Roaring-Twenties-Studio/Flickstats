@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./card.module.css";
+import styles from "./style.module.css";
 
 interface IProps {
   children: React.ReactNode;

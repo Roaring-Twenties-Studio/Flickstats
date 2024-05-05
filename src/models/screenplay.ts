@@ -123,17 +123,18 @@ export type ParsedCharacter = {
 };
 
 export interface IGenericParser {
-  getAct(pageLines: PDFLine[]): string;
-  isNewActTag(pageLine: PDFLine): boolean;
   isActionLine(pageLine: PDFLine): boolean;
-  isDialog(pageLine: PDFLine): boolean;
-  isContDCharacter(pageLine: PDFLine): boolean;
-  isPageNumber(pageLine: PDFLine): boolean;
   isCharacter(pageLine: PDFLine): boolean;
+  isContDCharacter(pageLine: PDFLine): boolean;
+  isDialog(pageLine: PDFLine): boolean;
+  isNewActTag(pageLine: PDFLine): boolean;
+  isPageNumber(pageLine: PDFLine): boolean;
   isSceneSlug(pageLine: PDFLine): boolean;
+  isTitlePage(pageLines: PDFLine[]): boolean;
+  getAct(pageLines: PDFLine[]): string;
   getCharacterWithoutParenthesis(lineStr: string): string;
   getPopularWords(wordsList: Record<string, number>): PopularWord[];
-  isTitlePage(pageLines: PDFLine[]): boolean;
+  getValidSlug(pageLines: PDFLine[], index: number): string;
 }
 
 export interface IScreenplayParser {
@@ -148,6 +149,6 @@ export interface ICharacterParser {
 }
 
 export interface IMasterScreenplay {
-  readScreenplay(pageParser: (data: PDFLine[]) => any): Promise<void>;
   enrichScreenplay(screenplay: ParsedScreenplay): Promise<ParsedScreenplay>;
+  readScreenplay(pageParser: (data: PDFLine[]) => any): Promise<void>;
 }

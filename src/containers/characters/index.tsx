@@ -3,12 +3,12 @@ import Counter from "components/counter";
 import HeroApperance from "components/hero-appearance";
 import Row from "components/row";
 import RowTitle from "components/row-title";
-import Title, { Text } from "components/title/light";
-import MultipleLineChartCard from "containers/multiple-line-chart";
+import Title, { Text } from "components/title";
+import MultipleLineChartCard from "containers/charts/multiple-line-chart";
+import VerticalBarChartCard from "containers/charts/vertical-bar-chart";
 import { ParsedScreenplay } from "models/screenplay";
-import styles from "./characters.module.css";
-import VerticalBarChartCard from "containers/vertical-bar-chart";
 import CharacterScenes from "./character-scenes";
+import styles from "./style.module.css";
 
 interface IProps {
   parsedScreenplay: ParsedScreenplay;

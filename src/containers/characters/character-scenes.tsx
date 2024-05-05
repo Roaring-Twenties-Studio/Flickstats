@@ -1,9 +1,9 @@
 import React from "react";
 import { ChartData } from "chart.js";
 import Card from "components/card";
-import HorizontalBarChart from "components/horizontal-bar-chart";
-import { getRandomColor } from "models/chart";
-import { ParsedScreenplay } from "models/screenplay";
+import HorizontalBarChart from "components/charts/horizontal-bar-chart";
+import type { ParsedScreenplay } from "models/screenplay";
+import { getRandomColor } from "utils/chart";
 
 interface IProps {
   scenes: ParsedScreenplay["characterScenes"];

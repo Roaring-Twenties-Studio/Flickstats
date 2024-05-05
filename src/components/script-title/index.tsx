@@ -5,12 +5,12 @@ import React, {
   useTransition,
 } from "react";
 import Button from "components/button";
-import UserGear from "components/icons/user-gear-white.svg";
 import Back from "components/icons/arrow-left.svg";
-import Trash from "components/icons/trash.svg";
 import Filters from "components/icons/filters.svg";
-import styles from "./script-title.module.css";
+import Trash from "components/icons/trash.svg";
+import UserGear from "components/icons/user-gear-white.svg";
 import ButtonLoader from "components/loader/button";
+import styles from "./style.module.css";
 
 interface IProps {
   title: string;

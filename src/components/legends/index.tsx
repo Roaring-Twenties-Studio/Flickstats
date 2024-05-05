@@ -1,6 +1,6 @@
 import React from "react";
-import { Legend } from "models/chart";
-import styles from "./legend.module.css";
+import type { Legend } from "models/chart";
+import styles from "./style.module.css";
 
 interface IProps {
   legends: Legend[];

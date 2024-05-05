@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import Clock from "components/icons/clock.svg";
-import { ParsedCharacter } from "models/screenplay";
-import styles from "./period-text.module.css";
+import type { ParsedCharacter } from "models/screenplay";
+import styles from "./style.module.css";
 
 interface IProps {
   pages: ParsedCharacter["pages"];

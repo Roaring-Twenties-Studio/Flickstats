@@ -62,18 +62,6 @@ body {
   animation-delay: -0.5s;
 }
 
-.formLoader {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 150px;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @keyframes root {
   0% {
     top: 36px;

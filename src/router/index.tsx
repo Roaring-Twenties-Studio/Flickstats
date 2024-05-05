@@ -5,11 +5,11 @@ import {
   RouterProvider,
   Navigate,
 } from "react-router-dom";
-import { routes } from "./routes";
-import Dashboard from "pages/dashboard";
-import Guide from "pages/guide";
-import ErrorPage from "containers/error-page";
 import Navbar from "components/navbar";
+import Dashboard from "pages/dashboard";
+import ErrorPage from "pages/error";
+import Guide from "pages/guide";
+import { routes } from "./routes";
 
 function NavbarWrapper() {
   return (

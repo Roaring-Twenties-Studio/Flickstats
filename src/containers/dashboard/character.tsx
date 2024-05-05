@@ -1,22 +1,22 @@
 import React from "react";
 import RowTitle from "components/row-title";
-import { ParsedCharacter } from "models/screenplay";
-import styles from "./dashboard-container.module.css";
-import Row from "components/row";
-import WordCloud from "components/word-cloud";
-import MultipleLineChartCard from "containers/multiple-line-chart/character";
-import IntExtText from "components/int-ext-text/character";
-import PieChartCard from "containers/pie-chart/character";
-import TitleLight from "components/title/light";
-import PeriodText from "components/period-text/character";
-import DoughnutChartCard from "containers/doughnut-chart/character";
+import type { ParsedCharacter } from "models/screenplay";
 import Counter from "components/counter";
-import HorizontalBarChartCard from "containers/horizontal-bar-chart/character";
-import FirstScene from "components/first-scene/character";
-import StackedBarChartCard from "containers/stacked-bar-chart/character";
-import FirstQuote from "components/hero-appearance/first-quote";
-import Quote from "components/quote";
 import DialogsCount from "components/dialogs-count/character";
+import FirstScene from "components/first-scene/character";
+import FirstQuote from "components/hero-appearance/first-quote";
+import IntExtText from "components/int-ext-text/character";
+import PeriodText from "components/period-text/character";
+import Quote from "components/quote";
+import Row from "components/row";
+import Title from "components/title";
+import WordCloud from "components/charts/word-cloud";
+import DoughnutChartCard from "containers/charts/doughnut-chart/character";
+import HorizontalBarChartCard from "containers/charts/horizontal-bar-chart/character";
+import MultipleLineChartCard from "containers/charts/multiple-line-chart/character";
+import PieChartCard from "containers/charts/pie-chart/character";
+import StackedBarChartCard from "containers/charts/stacked-bar-chart/character";
+import styles from "./style.module.css";
 
 interface IProps {
   parsedCharacter: ParsedCharacter;
@@ -60,7 +60,7 @@ const Character = ({ parsedCharacter }: IProps) => {
           yAxis="scenesIntExt"
           filterEmptyValues={false}
           colorsPalette={{ EXT: "#5b5b0a", INT: "#f0f078" }}
-          title={<TitleLight title="Evolution over time" />}
+          title={<Title title="Evolution over time" />}
         />
       </Row>
       {parsedCharacter.labels.scenesPeriod.length > 0 && (
@@ -126,7 +126,7 @@ const Character = ({ parsedCharacter }: IProps) => {
         <WordCloud words={parsedCharacter.dialogVibe} wordType="dialog" />
       </Row>
       <div className={styles.push} />
-      <TitleLight title="Dialogs over time" />
+      <Title title="Dialogs over time" />
       <MultipleLineChartCard
         pages={parsedCharacter.pages}
         labels={parsedCharacter.labels}
@@ -134,7 +134,7 @@ const Character = ({ parsedCharacter }: IProps) => {
         yAxis="dialogs"
       />
       <div className={styles.bigPush} />
-      <TitleLight title="Actions over time" />
+      <Title title="Actions over time" />
       <MultipleLineChartCard
         pages={parsedCharacter.pages}
         labels={parsedCharacter.labels}
@@ -142,7 +142,7 @@ const Character = ({ parsedCharacter }: IProps) => {
         yAxis="actions"
       />
       <div className={styles.bigPush} />
-      <TitleLight title="Presence over time" />
+      <Title title="Presence over time" />
       <MultipleLineChartCard
         pages={parsedCharacter.pages}
         labels={parsedCharacter.labels}

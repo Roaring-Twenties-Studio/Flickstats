@@ -1,7 +1,7 @@
 import React from "react";
-import { ParsedCharacter } from "models/screenplay";
-import styles from "./hero-apperance.module.css";
 import Quote from "components/quote";
+import type { ParsedCharacter } from "models/screenplay";
+import styles from "./style.module.css";
 
 interface IProps {
   pages: ParsedCharacter["pages"];

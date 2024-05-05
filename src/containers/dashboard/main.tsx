@@ -1,13 +1,17 @@
 import React, { useState } from "react";
+import { PDFPageProxy } from "pdfjs-dist";
 import Row from "components/row";
 import ScriptTitle from "components/script-title";
-import { ParsedCharacter, ParsedScreenplay, Settings } from "models/screenplay";
-import styles from "./dashboard-container.module.css";
-import SettingsModal from "./settings-modal";
+import type {
+  ParsedCharacter,
+  ParsedScreenplay,
+  Settings,
+} from "models/screenplay";
+import Character from "./character";
 import CharactersModal from "./characters-modal";
 import GlobalData from "./global-data";
-import Character from "./character";
-import { PDFPageProxy } from "pdfjs-dist";
+import SettingsModal from "./settings-modal";
+import styles from "./style.module.css";
 
 interface IProps {
   parsedScreenplay: ParsedScreenplay;

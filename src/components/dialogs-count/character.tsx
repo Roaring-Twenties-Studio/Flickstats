@@ -1,7 +1,7 @@
 import React from "react";
 import Dialog from "components/icons/dialog.svg";
-import styles from "./dialogs-count.module.css";
-import { ParsedCharacter } from "models/screenplay";
+import type { ParsedCharacter } from "models/screenplay";
+import styles from "./style.module.css";
 
 interface IProps {
   pages: ParsedCharacter["pages"];

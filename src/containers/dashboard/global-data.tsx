@@ -8,17 +8,17 @@ import PeriodText from "components/period-text";
 import Quote from "components/quote";
 import Row from "components/row";
 import RowTitle from "components/row-title";
-import TitleLight from "components/title/light";
-import WordCloud from "components/word-cloud";
+import Title from "components/title";
+import WordCloud from "components/charts/word-cloud";
 import Characters from "containers/characters";
-import DoughnutChartCard from "containers/doughnut-chart";
-import HorizontalBarChartCard from "containers/horizontal-bar-chart";
-import MultipleLineChartCard from "containers/multiple-line-chart";
-import PieChartCard from "containers/pie-chart";
-import StackedBarChartCard from "containers/stacked-bar-chart";
-import StructureChart from "containers/structure-chart";
+import DoughnutChartCard from "containers/charts/doughnut-chart";
+import HorizontalBarChartCard from "containers/charts/horizontal-bar-chart";
+import MultipleLineChartCard from "containers/charts/multiple-line-chart";
+import PieChartCard from "containers/charts/pie-chart";
+import StackedBarChartCard from "containers/charts/stacked-bar-chart";
+import StructureChart from "containers/charts/structure-chart";
 import { ParsedScreenplay } from "models/screenplay";
-import styles from "./dashboard-container.module.css";
+import styles from "./style.module.css";
 import DialogsCount from "components/dialogs-count";
 
 interface IProps {
@@ -87,7 +87,7 @@ const GlobalData = ({ parsedScreenplay }: IProps) => {
           yAxis="scenesIntExt"
           filterEmptyValues={false}
           colorsPalette={{ EXT: "#5b5b0a", INT: "#f0f078" }}
-          title={<TitleLight title="Evolution over time" />}
+          title={<Title title="Evolution over time" />}
         />
       </Row>
       {parsedScreenplay.labels.scenesPeriod.length > 0 && (

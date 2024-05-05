@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "components/button";
 import Loader from "components/loader";
-import styles from "./data-wrapper.module.css";
+import styles from "./style.module.css";
 
 interface IProps {
   children: React.ReactNode;

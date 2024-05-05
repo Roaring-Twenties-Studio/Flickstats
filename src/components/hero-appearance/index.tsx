@@ -1,7 +1,7 @@
 import React from "react";
-import { ParsedScreenplay } from "models/screenplay";
-import styles from "./hero-apperance.module.css";
 import Quote from "components/quote";
+import type { ParsedScreenplay } from "models/screenplay";
+import styles from "./style.module.css";
 
 interface IProps {
   heroQuote: ParsedScreenplay["heroQuote"];

@@ -1,7 +1,7 @@
 import React from "react";
 import Counter from "components/counter";
-import { ParsedScreenplay } from "models/screenplay";
-import styles from "./percentages.module.css";
+import type { ParsedScreenplay } from "models/screenplay";
+import styles from "./style.module.css";
 
 interface IProps {
   pages: ParsedScreenplay["pages"];

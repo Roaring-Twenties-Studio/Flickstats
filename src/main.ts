@@ -29,14 +29,14 @@ const createWindow = (): void => {
     },
   });
 
-  // and load the index.html of the app.
+  // load the index.html of the app.
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY).then(() => {
     splash.close();
     mainWindow.center();
     mainWindow.show();
   });
 
-  // allow to open external link from the app
+  // allow opening of external link from app
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
     shell.openExternal(url);
     return { action: "deny" };
@@ -53,7 +53,7 @@ const createWindow = (): void => {
   splash.loadFile("./src/splash-screen/index.html");
   splash.center();
 
-  // Open the DevTools.
+  // open the dev tools in dev mode
   if (process.env.NODE_ENV === "development") {
     mainWindow.webContents.openDevTools();
   }
