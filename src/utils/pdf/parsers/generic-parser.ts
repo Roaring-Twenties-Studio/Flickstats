@@ -96,6 +96,8 @@ export class GenericParser implements IGenericParser {
       .map(([word, value]) => ({ text: word, value }));
   }
 
+  // We can't confuse a dialog with a character, even if the dialog is in all caps,
+  // because the parsers check if the line is a character before they check if it's a dialog.
   public isDialog(pageLine: PDFLine): boolean {
     return (
       this.isLineCentered(pageLine) &&
@@ -173,6 +175,7 @@ export class GenericParser implements IGenericParser {
     return line === "(CONTINUED)" || line === "(MORE)";
   }
 
+  // Once the title page has been found, the parsers skip the check for the next pages
   public isTitlePage(pageLines: PDFLine[]): boolean {
     // ignore the blank space lines
     const firstLine = pageLines.find((line) => !!line.str.replace(/ /g, ""));
