@@ -35,7 +35,7 @@ export class GenericParser implements IGenericParser {
 
   public isNewActTag(pageLine: PDFLine): boolean {
     const str = pageLine?.str?.toUpperCase().trim();
-    if (!str) return false;
+    if (!str || !this.isLineCentered(pageLine)) return false;
     return (
       str.startsWith("ACT ") ||
       str.startsWith("SCENE ") ||
@@ -48,13 +48,12 @@ export class GenericParser implements IGenericParser {
 
   private isEndActTag(pageLine: PDFLine): boolean {
     const str = pageLine?.str?.toUpperCase().trim();
-    if (!str) return false;
+    if (!str || !this.isLineCentered(pageLine)) return false;
     return (
-      this.isLineCentered(pageLine) &&
-      (str.startsWith("END OF ACT") ||
-        str.startsWith("END OF SCENE") ||
-        str.startsWith("END OF COLD OPEN") ||
-        str === "THE END")
+      str.startsWith("END OF ACT") ||
+      str.startsWith("END OF SCENE") ||
+      str.startsWith("END OF COLD OPEN") ||
+      str === "THE END"
     );
   }
 
@@ -175,7 +174,7 @@ export class GenericParser implements IGenericParser {
   }
 
   public isTitlePage(pageLines: PDFLine[]): boolean {
-    // check if first line has a lot of blank space before.
+    // ignore the blank space lines
     const firstLine = pageLines.find((line) => !!line.str.replace(/ /g, ""));
     if (firstLine) {
       // sometimes (MORE) and (CONTINOUS) tags - at the bottom of the page - can appear at the top of the parsed lines (pdfjs bug)
