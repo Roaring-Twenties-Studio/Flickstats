@@ -141,6 +141,10 @@ export interface IScreenplayParser {
   parseScreenplay(pdfPath: Uint8Array): Promise<ParsedScreenplay>;
 }
 
+export interface IMetadataParser {
+  getMetadata(pageLines: PDFLine[], pageNumber: number): MetaData;
+}
+
 export interface ICharacterParser {
   parseCharacter(
     pdfPath: Uint8Array,

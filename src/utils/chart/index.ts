@@ -33,7 +33,7 @@ export function updateCircleChartColors(
     const dataset = chart.data.datasets[i];
     const hoveredColors = labels.map((label, i) => {
       if (label === hover) {
-        // @ts-ignore hoveredBackgroundcolors is an array
+        // @ts-ignore hoverBackgroundColor is an array
         return dataset.hoverBackgroundColor[i];
       }
       return "#666";
@@ -101,5 +101,4 @@ export function getRandomColor(existingColors: string[]): string {
     return getRandomColor(existingColors);
   }
   return newColor;
-  // return "#" + Math.floor(Math.random() * 16777215).toString(16);
 }
